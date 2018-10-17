@@ -1,7 +1,6 @@
 import bs4 as bs
 import urllib.request
 from urllib.request import Request, urlopen
-from .models import series
 
 def getLinks(search):
 	search = search.strip()
@@ -23,3 +22,6 @@ def getLinks(search):
 			break
 
 	return link
+
+if __name__ == '__main__':
+	print (getLinks("Game of thrones"))
